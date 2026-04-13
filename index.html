@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Lakhbir — Game & XR Developer</title>
+<title>Lakhbir Singh — Game & XR Developer</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
 <style>
   :root {
@@ -172,8 +172,9 @@
   @keyframes glitch2 { 0%,88%,100%{transform:translate(0);opacity:0} 90%{transform:translate(3px,2px);opacity:.7} 93%{transform:translate(-3px,-2px);opacity:.7} 95%{transform:translate(0);opacity:0} }
 
   .divider { height:1px; background:linear-gradient(90deg,transparent,var(--border),transparent); margin:0 48px; }
-  .fade-in { opacity:0; transform:translateY(24px); transition:opacity 0.6s ease,transform 0.6s ease; }
-  .fade-in.visible { opacity:1; transform:none; }
+  .fade-in { opacity: 1; transform: none; transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.animate { opacity: 0; transform: translateY(24px); }
+  .fade-in.animate.visible { opacity: 1; transform: none; }
 
   @media(max-width:1100px){ .projects-grid{grid-template-columns:repeat(2,1fr)} }
   @media(max-width:900px){
@@ -208,7 +209,7 @@
   <h1><em>Beyond Reality.</em></h1>
   <p class="hero-sub">AR · VR · Mobile · WebGL · Multiplayer — building immersive experiences that push what's possible.</p>
   <div class="hero-actions">
-    <a href="#projects" class="btn-primary">View My Work →</a>
+    <a href="#projects" class="btn-primary" id="view-work-btn">View My Work →</a>
     <a href="#contact" class="btn-outline">Let's Collaborate</a>
   </div>
   <div class="stats">
@@ -781,7 +782,7 @@
       <h2>Let's build something remarkable.</h2>
       <p>Open to freelance projects, contract work, and remote positions. Whether it's a VR training platform, a multiplayer mobile game, or an AR experience — let's talk.</p>
       <div class="contact-links">
-        <a href="mailto:Lakhbirpawar4unity@gmail.com" class="contact-link-item"><div class="contact-link-icon">✉️</div><div class="contact-link-meta"><div class="contact-link-label">Email</div><div class="contact-link-val">Lakhbirpawar4unity@gmail.com</div></div></a>
+        <a href="/cdn-cgi/l/email-protection#a4e8c5cfccc6cdd6d4c5d3c5d690d1cacdd0dde4c3c9c5cdc88ac7cbc99bd7d1c6cec1c7d099f4d6cbcec1c7d0819694edcad5d1cdd6dd82c6cbc0dd99eccd819694e8c5cfccc6cdd68196e78194e58194e5ed819694c2cbd1cac0819694ddcbd1d6819694d4cbd6d0c2cbc8cdcb819694c5cac0819694d3cbd1c8c0819694c8cdcfc1819694d0cb819694c0cdd7c7d1d7d7819694c5819694d4d6cbcec1c7d0819694d3cdd0cc819694ddcbd18a8194e58194e5" class="contact-link-item"><div class="contact-link-icon">✉️</div><div class="contact-link-meta"><div class="contact-link-label">Email</div><div class="contact-link-val"><span class="__cf_email__" data-cfemail="5e123f35363c372c2e3f293f2c6a2b30372a271e39333f3732703d3133">[email&#160;protected]</span></div></div></a>
         <a href="https://www.upwork.com/freelancers/~0169bc8a1fb33b257e" target="_blank" class="contact-link-item"><div class="contact-link-icon">💼</div><div class="contact-link-meta"><div class="contact-link-label">Upwork</div><div class="contact-link-val">Hire Me on Upwork</div></div></a>
         <a href="https://www.freelancer.in/u/luckypawar" target="_blank" class="contact-link-item"><div class="contact-link-icon">🧑‍💻</div><div class="contact-link-meta"><div class="contact-link-label">Freelancer</div><div class="contact-link-val">Hire Me on Freelancer</div></div></a>
         <a href="https://www.linkedin.com/in/lakhbir-gamensoft/" target="_blank" class="contact-link-item"><div class="contact-link-icon">🔗</div><div class="contact-link-meta"><div class="contact-link-label">LinkedIn</div><div class="contact-link-val">Connect with Me</div></div></a>
@@ -795,7 +796,7 @@
         <div class="t-line"></div>
         <div class="t-line"><span class="t-muted">{</span></div>
         <div class="t-line">  <span class="t-cyan">"name"</span><span class="t-muted">:</span> <span class="t-green">"Lakhbir Singh"</span><span class="t-muted">,</span></div>
-        <div class="t-line">  <span class="t-cyan">"email"</span><span class="t-muted">:</span> <span class="t-green">"Lakhbirpawar4unity@gmail.com"</span><span class="t-muted">,</span></div>
+        <div class="t-line">  <span class="t-cyan">"email"</span><span class="t-muted">:</span> <span class="t-green">"<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9fd3fef4f7fdf6edeffee8feedabeaf1f6ebe6dff8f2fef6f3b1fcf0f2">[email&#160;protected]</a>"</span><span class="t-muted">,</span></div>
         <div class="t-line">  <span class="t-cyan">"role"</span><span class="t-muted">:</span> <span class="t-green">"Game &amp; XR Developer"</span><span class="t-muted">,</span></div>
         <div class="t-line">  <span class="t-cyan">"experience"</span><span class="t-muted">:</span> <span class="t-green">"11+ years"</span><span class="t-muted">,</span></div>
         <div class="t-line">  <span class="t-cyan">"location"</span><span class="t-muted">:</span> <span class="t-green">"Jalandhar, Punjab, India"</span><span class="t-muted">,</span></div>
@@ -821,6 +822,27 @@
 </footer>
 
 <script>
+  // ── SMOOTH SCROLL — works on all browsers including Safari/iOS ──
+  function smoothScrollTo(targetId) {
+    var target = document.getElementById(targetId);
+    if (!target) return;
+    var navHeight = document.querySelector('nav') ? document.querySelector('nav').offsetHeight : 70;
+    var top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var href = this.getAttribute('href');
+        if (!href || href === '#') return;
+        var targetId = href.replace('#', '');
+        var target = document.getElementById(targetId);
+        if (target) { e.preventDefault(); smoothScrollTo(targetId); }
+      });
+    });
+  });
+
   function filterProjects(cat, btn) {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
     btn.classList.add('active');
@@ -842,10 +864,19 @@
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
-      if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 80);
+      if (e.isIntersecting) {
+        setTimeout(() => { e.target.classList.add('visible'); }, i * 80);
+        observer.unobserve(e.target);
+      }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.05, rootMargin: '0px 0px -20px 0px' });
+
   document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+  // Fallback: make all visible after 1.5s in case observer doesn't fire
+  setTimeout(() => {
+    document.querySelectorAll('.fade-in').forEach(el => el.classList.add('visible'));
+  }, 1500);
 
   document.querySelectorAll('.proj-card, .skill-cat, .xp-item').forEach(card => {
     card.addEventListener('mousemove', e => {
