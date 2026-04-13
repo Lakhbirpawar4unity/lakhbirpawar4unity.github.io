@@ -208,7 +208,7 @@
   <h1><em>Beyond Reality.</em></h1>
   <p class="hero-sub">AR · VR · Mobile · WebGL · Multiplayer — building immersive experiences that push what's possible.</p>
   <div class="hero-actions">
-    <a href="#projects" class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'});return false;">View My Work →</a>
+    <a href="#projects" class="btn-primary" id="view-work-btn">View My Work →</a>
     <a href="#contact" class="btn-outline">Let's Collaborate</a>
   </div>
   <div class="stats">
@@ -820,7 +820,28 @@
   <div>Gamensoft Studio</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
+  // ── SMOOTH SCROLL — works on all browsers including Safari/iOS ──
+  function smoothScrollTo(targetId) {
+    var target = document.getElementById(targetId);
+    if (!target) return;
+    var navHeight = document.querySelector('nav') ? document.querySelector('nav').offsetHeight : 70;
+    var top = target.getBoundingClientRect().top + window.pageYOffset - navHeight - 20;
+    window.scrollTo({ top: top, behavior: 'smooth' });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+      link.addEventListener('click', function (e) {
+        var href = this.getAttribute('href');
+        if (!href || href === '#') return;
+        var targetId = href.replace('#', '');
+        var target = document.getElementById(targetId);
+        if (target) { e.preventDefault(); smoothScrollTo(targetId); }
+      });
+    });
+  });
+
   function filterProjects(cat, btn) {
     document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
     btn.classList.add('active');
