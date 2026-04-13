@@ -782,7 +782,7 @@
       <h2>Let's build something remarkable.</h2>
       <p>Open to freelance projects, contract work, and remote positions. Whether it's a VR training platform, a multiplayer mobile game, or an AR experience — let's talk.</p>
       <div class="contact-links">
-        <a href="/cdn-cgi/l/email-protection#a4e8c5cfccc6cdd6d4c5d3c5d690d1cacdd0dde4c3c9c5cdc88ac7cbc99bd7d1c6cec1c7d099f4d6cbcec1c7d0819694edcad5d1cdd6dd82c6cbc0dd99eccd819694e8c5cfccc6cdd68196e78194e58194e5ed819694c2cbd1cac0819694ddcbd1d6819694d4cbd6d0c2cbc8cdcb819694c5cac0819694d3cbd1c8c0819694c8cdcfc1819694d0cb819694c0cdd7c7d1d7d7819694c5819694d4d6cbcec1c7d0819694d3cdd0cc819694ddcbd18a8194e58194e5" class="contact-link-item"><div class="contact-link-icon">✉️</div><div class="contact-link-meta"><div class="contact-link-label">Email</div><div class="contact-link-val"><span class="__cf_email__" data-cfemail="5e123f35363c372c2e3f293f2c6a2b30372a271e39333f3732703d3133">[email&#160;protected]</span></div></div></a>
+        <a href="#" id="email-link" class="contact-link-item"><div class="contact-link-icon">✉️</div><div class="contact-link-meta"><div class="contact-link-label">Email</div><div class="contact-link-val" id="email-display">Lakhbirpawar4unity&#＠gmail&#．com</div></div></a>
         <a href="https://www.upwork.com/freelancers/~0169bc8a1fb33b257e" target="_blank" class="contact-link-item"><div class="contact-link-icon">💼</div><div class="contact-link-meta"><div class="contact-link-label">Upwork</div><div class="contact-link-val">Hire Me on Upwork</div></div></a>
         <a href="https://www.freelancer.in/u/luckypawar" target="_blank" class="contact-link-item"><div class="contact-link-icon">🧑‍💻</div><div class="contact-link-meta"><div class="contact-link-label">Freelancer</div><div class="contact-link-val">Hire Me on Freelancer</div></div></a>
         <a href="https://www.linkedin.com/in/lakhbir-gamensoft/" target="_blank" class="contact-link-item"><div class="contact-link-icon">🔗</div><div class="contact-link-meta"><div class="contact-link-label">LinkedIn</div><div class="contact-link-val">Connect with Me</div></div></a>
@@ -796,7 +796,7 @@
         <div class="t-line"></div>
         <div class="t-line"><span class="t-muted">{</span></div>
         <div class="t-line">  <span class="t-cyan">"name"</span><span class="t-muted">:</span> <span class="t-green">"Lakhbir Singh"</span><span class="t-muted">,</span></div>
-        <div class="t-line">  <span class="t-cyan">"email"</span><span class="t-muted">:</span> <span class="t-green">"<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="9fd3fef4f7fdf6edeffee8feedabeaf1f6ebe6dff8f2fef6f3b1fcf0f2">[email&#160;protected]</a>"</span><span class="t-muted">,</span></div>
+        <div class="t-line">  <span class="t-cyan">"email"</span><span class="t-muted">:</span> <span class="t-green" id="terminal-email">"Lakhbirpawar4unity&#＠gmail&#．com"</span><span class="t-muted">,</span></div>
         <div class="t-line">  <span class="t-cyan">"role"</span><span class="t-muted">:</span> <span class="t-green">"Game &amp; XR Developer"</span><span class="t-muted">,</span></div>
         <div class="t-line">  <span class="t-cyan">"experience"</span><span class="t-muted">:</span> <span class="t-green">"11+ years"</span><span class="t-muted">,</span></div>
         <div class="t-line">  <span class="t-cyan">"location"</span><span class="t-muted">:</span> <span class="t-green">"Jalandhar, Punjab, India"</span><span class="t-muted">,</span></div>
@@ -822,6 +822,22 @@
 </footer>
 
 <script>
+  // ── EMAIL: assembled via JS so Cloudflare can't block it ──
+  (function() {
+    var u = 'Lakhbirpawar4unity';
+    var d = 'gmail.com';
+    var e = u + '@' + d;
+    var s = 'Project Inquiry';
+    var b = 'Hi Lakhbir,%0A%0AI found your portfolio and would like to discuss a project with you.%0A%0A';
+    var href = 'mailto:' + e + '?subject=' + s + '&body=' + b;
+    var link = document.getElementById('email-link');
+    var disp = document.getElementById('email-display');
+    var term = document.getElementById('terminal-email');
+    if (link) link.setAttribute('href', href);
+    if (disp) disp.textContent = e;
+    if (term) term.textContent = '"' + e + '"';
+  })();
+
   // ── SMOOTH SCROLL — works on all browsers including Safari/iOS ──
   function smoothScrollTo(targetId) {
     var target = document.getElementById(targetId);
